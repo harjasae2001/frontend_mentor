@@ -3,3 +3,56 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+.background{
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    width: 100%;
+    height: 40vh;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+    margin: -100px auto;
+    box-shadow: 0px 10px 20px 5px #88888833;
+}
+h1{
+    /* padding: 2rem; */
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 10px 20px;
+    /* justify-content: center; */
+}
+
+h2{
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(238, 29%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0px 1px 0px 0px #88888833;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
