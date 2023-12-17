@@ -6,7 +6,7 @@ var img = document.getElementsByClassName('toggleBtn')
 for(let i=0; i<img.length; i++){
     img[i].addEventListener('click', () => {
     var p = document.querySelectorAll('p');
-    const img = document.querySelector('.toggleBtn');
+    // var img = document.querySelector('.toggleBtn');
 
     if(p[i].classList.contains("hide") === true){
         p[i].classList.remove("hide");
@@ -17,8 +17,12 @@ for(let i=0; i<img.length; i++){
         p[i].classList.add("hide");
     
     }
-    // p.classList.toggle("hide");
-    console.log(img.classList.src);
-    img.classList.src = "faq-accordion-main/assets/images/icon-minus.svg"
+
+    if(img[i].getAttribute('src') === "./assets/images/icon-plus.svg"){
+        img[i].setAttribute('src', "./assets/images/icon-minus.svg");
+    }
+    else{
+        img[i].setAttribute('src', "./assets/images/icon-plus.svg");
+    }
 });
 }
