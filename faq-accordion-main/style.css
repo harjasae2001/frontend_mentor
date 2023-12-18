@@ -23,9 +23,11 @@ div{
 main{
     background-color: white;
     width: 40%;
-    height: 450px;
+    height: auto;
+    /* height: 450px; */
     border-radius: 10px;
     margin: -100px auto;
+    padding: 40px;
     box-shadow: 0px 10px 20px 5px #88888833;
     overflow: scroll;
 }
@@ -36,7 +38,7 @@ h1{
     color: hsl(238, 29%, 16%);
     display: flex;
     align-items: center;
-    padding: 20px 20px 10px 20px;
+    padding-bottom: 20px;
 
 }
 
@@ -47,26 +49,33 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 15px 0;
     cursor: pointer;
+   
+}
+.box{
     box-shadow: 0px 1px 0px 0px #88888833;
 
 }
-
+h2:hover{
+    color: #AD28EB;
+    cursor: pointer;
+}
 img{
     cursor: pointer;
 }
 p{
-    color: hsl(292, 16%, 49%);
-    padding: 10px 20px;
-    box-shadow: 0px 1px 0px 0px #88888833;
+    
 
 }
-
 .hide{
     display: none;
+
 }
 
 .show{
     display: block;
+    box-shadow: 0px 1px 0px 0px #8888881b;
+    padding-bottom: 20px;
+    color: hsl(292, 16%, 49%);
 }
