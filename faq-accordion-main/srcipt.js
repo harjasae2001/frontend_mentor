@@ -7,11 +7,12 @@ for(let i=0; i<img.length; i++){
     if(p[i].classList.contains("hide") === true){
         p[i].classList.remove("hide");
         p[i].classList.add("show");
+        img[i].classList.remove("box");
     }
     else{
         p[i].classList.remove("show");
         p[i].classList.add("hide");
-    
+        img[i].classList.add("box");
     }
     var im = document.querySelectorAll('img');
     if(im[i+1].getAttribute('src') === "./assets/images/icon-plus.svg"){
