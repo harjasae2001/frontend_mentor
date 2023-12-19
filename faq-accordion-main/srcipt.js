@@ -17,9 +17,11 @@ for(let i=0; i<img.length; i++){
     var im = document.querySelectorAll('img');
     if(im[i+1].getAttribute('src') === "./assets/images/icon-plus.svg"){
         im[i+1].setAttribute('src', "./assets/images/icon-minus.svg");
+        im[i+1].setAttribute('alt', "icon-minus");
     }
     else if(im[i+1].getAttribute('src') === "./assets/images/icon-minus.svg"){
         im[i+1].setAttribute('src', "./assets/images/icon-plus.svg");
+        im[i+1].setAttribute('alt', "icon-plus");
     }
 });
 }
