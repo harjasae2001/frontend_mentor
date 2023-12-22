@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Outfit:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,56 +20,69 @@
 <body>
 <header>
   <nav>
-    <ul>
-    <li>
-      Features 
-      <img src="./images/icon-arrow-down.svg">
-    </li>  
-    <li>
-      Company
-      <img src="./images/icon-arrow-down.svg">
-    </li>  
-    <li>
-      Careers
-    </li>  
-     <li>
-       About
-     </li>
-    </ul>
+    <img src="./images/logo.svg" class="logo">
+    <div class="navi">
+      <div class="nav1">
+
+        <ul>
+          <li>
+            Features 
+            <img src="./images/icon-arrow-down.svg">
+          </li>  
+          <li>
+            Company
+            <img src="./images/icon-arrow-down.svg">
+          </li>  
+          <li>
+            Careers
+          </li>  
+          <li>
+            About
+          </li>
+        </ul>
+      </div>
       
-    <ul>
+      <div class="nav2">
 
-     <li>
-
-       Login
-     </li> 
-     <li>
-      <button>
-        Register
-      </button>
-     </li> 
-    </ul>
+        <ul>
+          <li>
+            Login
+          </li> 
+          <li>
+            <button class="reg">
+              Register
+            </button>
+          </li> 
+        </ul>
+      </div>
+      </div>
   </nav>
 </header>
 
 <main>
-  <h1>
-    Make remote work
-  </h1> 
-  <h2>
-    Get your team in sync, no matter your location. Streamline processes, 
-    create team rituals, and watch productivity soar.
-  </h2>  
-<button>
-  Learn more
-</button>
-<img src="./images/client-databiz.svg" alt="databiz-logo">
-<img src="./images/client-audiophile.svg" alt="audio-phile-logo">
-<img src="./images/client-maker.svg" alt="maker-logo">
-<img src="./images/client-meet.svg" alt="meet-logo">
+  <div class="hero-content">
 
-<img src="./images/image-hero-desktop.png" alt="hero-desktop-image">
-</main>
+    <h1>
+      Make remote work
+    </h1> 
+    <h2>
+      Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.
+    </h2>  
+    <button class="learn">
+      Learn more
+    </button>
+    <div class="logos">
+
+      <img src="./images/client-databiz.svg" alt="databiz-logo">
+      <img src="./images/client-audiophile.svg" alt="audio-phile-logo">
+      <img src="./images/client-maker.svg" alt="maker-logo">
+      <img src="./images/client-meet.svg" alt="meet-logo">
+    </div>
+    </div>
+    
+    <img src="./images/image-hero-desktop.png" alt="hero-desktop-image" class="hero-img">
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
